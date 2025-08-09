@@ -1,0 +1,315 @@
+body {
+  background-color: antiquewhite;
+}
+
+:root {
+    /*france root items */
+  --blue: #002495;
+  --white: #fff;
+  --redfrance: #ed2938;
+  --france-height: 150px;
+  --france-width: calc(var(--france-height) * 3 / 2); /* 225px */
+  /*germany root items */
+
+--blackgermany:#000000;
+--redgermany:#de0002;
+--goldgermany:#ffce00;
+--germany-height:150px;
+--germany-width:calc(var(var(--germany-height)*5/3));
+
+/*japan root items*/
+--whitejapan:var(--white);
+--redjapan:#bc022c;
+--japan-height:200px;
+--japan-width:calc(var(var(--japan-height)*3)/2);
+--japanwhite-size:calc(var(--japan-width)*3/5);
+
+
+/*Niger root items*/
+/*Orange (top band and central disc): #E05206
+White (middle band): #FFFFFF
+Green (bottom band): #0DB02B*/
+
+--orangeniger:#e05206;
+--whiteniger:#FFFFFF;
+--greenniger:#0db02b;
+--niger-height:200px;
+--niger-width:calc(var(--niger-height)*7/6);
+
+/*Madagascar root items*/
+/*
+
+
+White: Representing purity.
+Hex code: #FFFFFF
+RGB: (255, 255, 255)
+Red: Symbolizing sovereignty.
+Hex code: #FC3D32 (Coral Red)
+RGB: (252, 61, 50)
+Green: Associated with the coastal regions and hope.
+Hex code: #007E3A (Philippine Green)
+RGB: (0, 126, 58)
+*/
+--white-mg:#ffffff;
+--red-mg:#FC3D32;
+--green-mg:#007E3A;
+--height-mg:150px;
+--width-mg:calc(var(--height-mg)*1.5);
+
+/*switzerland root items */
+--swiss-red:#ff0002;
+--swiss-white:#ffffff;
+--swiss-hw:200px;
+--swiss-width:var(--swiss-height);
+/*sweden root items */
+--sweden-blue:#0269a6;
+--sweden-yellow:#fecc00;
+--sweden-height:150px;
+--sweden-width:calc(var(--sweden-height)*1.6);  /*320 px */
+
+
+
+}
+
+
+
+
+
+/* ===== FRENCH FLAG ===== */
+.France-flag {
+  width: var(--france-width);    /* 225px */
+  height: var(--france-height);  /* 150px */
+  display: flex; /* horizontal stripes */
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 3px black;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#France-blue,
+#France-white,
+#France-red {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+#France-blue {
+  background-color: var(--blue);
+}
+
+#France-white {
+  background-color: var(--white);
+}
+
+#France-red {
+  background-color: var(--redfrance);
+}
+
+/* ===== GERMANY FLAG ===== */
+.Germany-flag {
+  width: 200px;
+  height: 189px; /* 3 stripes * 63px */
+  margin: 50px auto;
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 3px black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#Germany-black,
+#Germany-red,
+#Germany-gold {
+  width: 100%;
+  height: 63px;
+}
+
+#Germany-black {
+  background-color: var(--blackgermany);
+}
+
+#Germany-red {
+  background-color: var(--redgermany);
+}
+
+#Germany-gold {
+  background-color:var(--goldgermany);
+}
+
+/* ===== JAPAN FLAG ===== */
+
+.Japan-flag {
+  width: 200px;
+  height: 189px; /* 3 stripes * 63px */
+  margin: 50px auto;
+  border: 3px solid --whitejapan;
+  box-shadow: 0 0 3px black;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--whitejapan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#Japan-red{
+background-color: var(--redjapan);
+width:calc(var(--japan-height)*3/5);;
+height: calc(var(--japan-height)*3/5);
+border-radius: 50%;
+/*--margin: 30px 30px 30px 40px;--*/
+
+}
+/* ===== NIGER FLAG ===== */
+.niger-flag{
+ width: var(--niger-width);    
+  height: var(--niger-height);  
+  display: flex; 
+  flex-direction: column;
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 3px black;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+#Niger-orange, #Niger-green ,#Niger-white{
+   width: 100%;
+  flex: 1;
+}
+#Niger-orange{
+background-color: var(--orangeniger);
+}
+#Niger-green{
+  background-color: var(--greenniger);
+
+}
+
+#Niger-white{
+  background-color: var(--whiteniger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+#Niger-circle{
+  height: calc(var(--niger-height)/3 *0.85);
+  width: calc(var(--niger-width) /3 * 0.85);
+  background-color: var(--orangeniger);
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+/* ===== MADAGASCAR FLAG ===== */
+.madagascar-flag{
+height: var(--height-mg);
+width: var(--width-mg);
+background-color: var(--white-mg);
+display: flex;
+flex-direction: column;
+align-items: end;
+justify-content: start;
+border: 3px solid whitesmoke;
+  box-shadow: 0 0 3px black;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+#red-mg, #green-mg{
+  width: 60%;
+  height: var(--height-mg);
+}
+
+#red-mg{
+  background-color: var(--red-mg);
+}
+#green-mg{
+  background-color: var(--green-mg);
+}
+
+
+/* ===== SWITZERLAND FLAG ===== */
+.swiss-flag{
+  background-color: var(--swiss-red);
+  height: var(--swiss-hw);
+  width: var(--swiss-hw);
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 3px black;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  
+
+}
+
+#rect-horizontal{
+ 
+  background-color: var(--swiss-white);
+  height: calc(var(--swiss-hw)* 3/16);
+  width: calc(var(--swiss-hw)* 5/8);
+position: absolute;
+}
+
+
+
+#rect-vertical{
+ 
+  background-color: var(--swiss-white);
+  height: calc(var(--swiss-hw)* 5/8);;
+  width: calc(var(--swiss-hw)* 3/16);
+
+}
+
+
+/* ===== SWEDEN FLAG=== */
+.sweden-flag{
+  background-color: var(--sweden-blue);
+  height: var(--sweden-height);
+  width: var(--sweden-width);
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 3px black;
+  margin: 50px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  
+
+}
+
+#sweden-1, #sweden-2{
+background-color: var(--sweden-yellow);
+}
+
+#sweden-1{
+ 
+  height:var(--sweden-height);
+  width: calc(var(--sweden-width) *0.125);
+  position: absolute;
+  margin-right:80px ;
+
+}
+
+
+
+#sweden-2{
+ 
+  height: calc(var(--sweden-height)* 0.2);
+  width: var(--sweden-width);
+  position: relative;
+
+}
