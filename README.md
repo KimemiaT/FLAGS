@@ -1,6 +1,6 @@
-# CSS Flags Project 🎨🏳️
+# CSS Flags Project 
 
-A collection of national flags : **France, Germany, Japan, Niger, Madagascar, Switzerland, and Sweden** — built entirely with **HTML & CSS**.  
+A collection of national flags : **France, Germany, Japan, Niger, Madagascar, Switzerland, and Sweden** , built entirely with **HTML & CSS**.  
 No images.just pure CSS magic ✨.
 
 
